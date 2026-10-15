@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_scanner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margem_tela">
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            style="@style/Pocket.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scanner_tela_titulo" />
+
+        <TextView
+            android:id="@+id/txt_boas_vindas"
+            style="@style/Pocket.Corpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno" />
+
+        <EditText
+            android:id="@+id/edit_mensagem"
+            style="@style/Pocket.Campo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:gravity="top|start"
+            android:hint="@string/hint_mensagem"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="3" />
+
+        <TextView
+            android:id="@+id/txt_erro"
+            style="@style/Pocket.Corpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:textColor="@color/vermelho"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_analisar"
+                style="@style/Pocket.Botao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/btn_analisar" />
+
+            <Button
+                android:id="@+id/btn_limpar"
+                style="@style/Pocket.BotaoSecundario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/btn_limpar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/painel_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_resultado"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Pocket.Titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medida"
+                    android:textColor="@color/azul_neon"
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/Pocket.Titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/resultado"
+                    android:textColor="@color/azul_neon"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medida_caracteres" />
+
+                <TextView
+                    android:id="@+id/valor_caracteres"
+                    style="@style/Pocket.Titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medida_palavras" />
+
+                <TextView
+                    android:id="@+id/valor_palavras"
+                    style="@style/Pocket.Titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medida_vogais" />
+
+                <TextView
+                    android:id="@+id/valor_vogais"
+                    style="@style/Pocket.Titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medida_invertido" />
+
+                <TextView
+                    android:id="@+id/valor_invertido"
+                    style="@style/Pocket.Titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/medida_palindromo" />
+
+                <TextView
+                    android:id="@+id/valor_palindromo"
+                    style="@style/Pocket.Titulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_voltar"
+                style="@style/Pocket.BotaoSecundario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/btn_voltar_menu" />
+
+            <Button
+                android:id="@+id/btn_encerrar"
+                style="@style/Pocket.Botao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/btn_encerrar_sessao" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

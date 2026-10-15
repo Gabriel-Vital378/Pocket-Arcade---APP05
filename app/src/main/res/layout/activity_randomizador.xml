@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margem_tela">
+
+    <TextView
+        android:id="@+id/txt_titulo"
+        style="@style/Pocket.Titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/randomizador_tela_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_boas_vindas"
+        style="@style/Pocket.Corpo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaco_pequeno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_titulo" />
+
+    <EditText
+        android:id="@+id/edit_valor"
+        style="@style/Pocket.Campo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaco"
+        android:layout_marginEnd="@dimen/espaco_pequeno"
+        android:hint="@string/hint_valor"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:inputType="text|textCapSentences"
+        android:maxLength="30"
+        app:layout_constraintEnd_toStartOf="@id/spinner_categoria"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_boas_vindas" />
+
+    <Spinner
+        android:id="@+id/spinner_categoria"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:entries="@array/categorias"
+        app:layout_constraintBottom_toBottomOf="@id/edit_valor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/edit_valor" />
+
+    <TextView
+        android:id="@+id/txt_erro"
+        style="@style/Pocket.Corpo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaco_pequeno"
+        android:textColor="@color/vermelho"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_valor" />
+
+    <Button
+        android:id="@+id/btn_adicionar"
+        style="@style/Pocket.Botao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaco"
+        android:text="@string/btn_adicionar"
+        app:layout_constraintEnd_toStartOf="@id/btn_sortear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_erro" />
+
+    <Button
+        android:id="@+id/btn_sortear"
+        style="@style/Pocket.Botao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espaco_pequeno"
+        android:layout_marginTop="@dimen/espaco"
+        android:text="@string/btn_sortear"
+        app:layout_constraintEnd_toStartOf="@id/btn_alternar"
+        app:layout_constraintStart_toEndOf="@id/btn_adicionar"
+        app:layout_constraintTop_toBottomOf="@id/txt_erro" />
+
+    <Button
+        android:id="@+id/btn_alternar"
+        style="@style/Pocket.BotaoSecundario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espaco_pequeno"
+        android:layout_marginTop="@dimen/espaco"
+        android:text="@string/btn_ver_grade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_sortear"
+        app:layout_constraintTop_toBottomOf="@id/txt_erro" />
+
+    <TextView
+        android:id="@+id/txt_sorteado"
+        style="@style/Pocket.Titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/espaco"
+        android:gravity="center"
+        android:text="@string/sorteio_inicial"
+        android:textColor="@color/azul_neon"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sortear" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_itens"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/espaco"
+        android:layout_marginBottom="@dimen/espaco"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/btn_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_sorteado" />
+
+    <Button
+        android:id="@+id/btn_voltar"
+        style="@style/Pocket.BotaoSecundario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/espaco_pequeno"
+        android:text="@string/btn_voltar_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_encerrar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_encerrar"
+        style="@style/Pocket.Botao"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espaco_pequeno"
+        android:text="@string/btn_encerrar_sessao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

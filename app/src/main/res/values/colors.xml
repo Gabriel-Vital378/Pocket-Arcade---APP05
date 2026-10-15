@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#1A1040</color>
+    <color name="bg_topo">#3A1C8F</color>
+    <color name="bg_base">#0F0A2E</color>
+    <color name="card">#2A1F66</color>
+    <color name="card_topo">#3B2B91</color>
+    <color name="campo">#1A1245</color>
+    <color name="borda">#5B4BC4</color>
+    <color name="azul_neon">#2EE6FF</color>
+    <color name="laranja_neon">#FFA11F</color>
+    <color name="laranja_escuro">#C46A00</color>
+    <color name="roxo_neon">#C77DFF</color>
+    <color name="rosa">#FF4FB8</color>
+    <color name="texto">#FFFFFF</color>
+    <color name="texto_sec">#D9D2FF</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="escuro">#1A1040</color>
+    <color name="verde">#3DDC84</color>
+    <color name="amarelo">#FFE14D</color>
+    <color name="cinza">#8E88B8</color>
+    <color name="vermelho">#FF6B81</color>
+</resources>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_central"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!-- Unico filho direto do NestedScrollView (obrigatorio) -->
+    <LinearLayout
+        android:id="@+id/container_central"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margem_tela">
+
+        <TextView
+            android:id="@+id/txt_saudacao"
+            style="@style/Pocket.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/txt_central_subtitulo"
+            style="@style/Pocket.Corpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:text="@string/central_subtitulo" />
+
+        <LinearLayout
+            android:id="@+id/painel_scanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_card_scanner"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/img_scanner"
+                android:layout_width="@dimen/tam_icone"
+                android:layout_height="@dimen/tam_icone"
+                android:contentDescription="@string/cd_icone_scanner"
+                android:src="@drawable/ic_scanner" />
+
+            <TextView
+                android:id="@+id/txt_titulo_scanner"
+                style="@style/Pocket.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/scanner_titulo" />
+
+            <TextView
+                android:id="@+id/txt_desc_scanner"
+                style="@style/Pocket.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/scanner_desc" />
+
+            <Button
+                android:id="@+id/btn_scanner"
+                style="@style/Pocket.Botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/btn_abrir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/painel_arena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_card_arena"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/img_arena"
+                android:layout_width="@dimen/tam_icone"
+                android:layout_height="@dimen/tam_icone"
+                android:contentDescription="@string/cd_icone_arena"
+                android:src="@drawable/ic_tesoura" />
+
+            <TextView
+                android:id="@+id/txt_titulo_arena"
+                style="@style/Pocket.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/arena_titulo" />
+
+            <TextView
+                android:id="@+id/txt_desc_arena"
+                style="@style/Pocket.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/arena_desc" />
+
+            <Button
+                android:id="@+id/btn_arena"
+                style="@style/Pocket.Botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/btn_abrir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/painel_cofre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_card_cofre"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/img_cofre"
+                android:layout_width="@dimen/tam_icone"
+                android:layout_height="@dimen/tam_icone"
+                android:contentDescription="@string/cd_icone_cofre"
+                android:src="@drawable/ic_cofre" />
+
+            <TextView
+                android:id="@+id/txt_titulo_cofre"
+                style="@style/Pocket.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/cofre_titulo" />
+
+            <TextView
+                android:id="@+id/txt_desc_cofre"
+                style="@style/Pocket.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/cofre_desc" />
+
+            <Button
+                android:id="@+id/btn_cofre"
+                style="@style/Pocket.Botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/btn_abrir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/painel_randomizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_card_randomizador"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/img_randomizador"
+                android:layout_width="@dimen/tam_icone"
+                android:layout_height="@dimen/tam_icone"
+                android:contentDescription="@string/cd_icone_randomizador"
+                android:src="@drawable/ic_randomizador" />
+
+            <TextView
+                android:id="@+id/txt_titulo_randomizador"
+                style="@style/Pocket.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/randomizador_titulo" />
+
+            <TextView
+                android:id="@+id/txt_desc_randomizador"
+                style="@style/Pocket.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/randomizador_desc" />
+
+            <Button
+                android:id="@+id/btn_randomizador"
+                style="@style/Pocket.Botao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:text="@string/btn_abrir" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_encerrar"
+            style="@style/Pocket.BotaoSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:text="@string/btn_encerrar_sessao" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

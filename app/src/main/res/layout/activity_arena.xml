@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_arena"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margem_tela">
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            style="@style/Pocket.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/arena_tela_titulo" />
+
+        <TextView
+            android:id="@+id/txt_boas_vindas"
+            style="@style/Pocket.Corpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno" />
+
+        <TextView
+            style="@style/Pocket.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:text="@string/arena_escolha"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_pedra"
+                    android:layout_width="@dimen/tam_jogada"
+                    android:layout_height="@dimen/tam_jogada"
+                    android:background="@drawable/bg_jogada"
+                    android:contentDescription="@string/jogada_pedra"
+                    android:padding="18dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_pedra" />
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espaco_pequeno"
+                    android:text="@string/jogada_pedra" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_papel"
+                    android:layout_width="@dimen/tam_jogada"
+                    android:layout_height="@dimen/tam_jogada"
+                    android:background="@drawable/bg_jogada"
+                    android:contentDescription="@string/jogada_papel"
+                    android:padding="18dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_papel" />
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espaco_pequeno"
+                    android:text="@string/jogada_papel" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_tesoura"
+                    android:layout_width="@dimen/tam_jogada"
+                    android:layout_height="@dimen/tam_jogada"
+                    android:background="@drawable/bg_jogada"
+                    android:contentDescription="@string/jogada_tesoura"
+                    android:padding="18dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_tesoura" />
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/espaco_pequeno"
+                    android:text="@string/jogada_tesoura" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_regra"
+            style="@style/Pocket.Corpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:text="@string/arena_regra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <TextView
+                android:id="@+id/txt_placar"
+                style="@style/Pocket.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/azul_neon"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco"
+                android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_voce" />
+
+                <ImageView
+                    android:id="@+id/img_jogador"
+                    android:layout_width="@dimen/tam_duelo"
+                    android:layout_height="@dimen/tam_duelo"
+                    android:layout_marginTop="@dimen/espaco_pequeno"
+                    android:contentDescription="@string/cd_aguardando_jogada"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_interrogacao" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Pocket.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_dispositivo" />
+
+                <ImageView
+                    android:id="@+id/img_dispositivo"
+                    android:layout_width="@dimen/tam_duelo"
+                    android:layout_height="@dimen/tam_duelo"
+                    android:layout_marginTop="@dimen/espaco_pequeno"
+                    android:contentDescription="@string/cd_aguardando_jogada"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_interrogacao" />
+            </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_resultado"
+                style="@style/Pocket.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_tela"
+                android:gravity="center"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_nova_partida"
+            style="@style/Pocket.Botao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margem_tela"
+            android:text="@string/btn_nova_partida" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_voltar"
+                style="@style/Pocket.BotaoSecundario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/btn_voltar_menu" />
+
+            <Button
+                android:id="@+id/btn_encerrar"
+                style="@style/Pocket.Botao"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/btn_encerrar_sessao" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_apresentacao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margem_tela">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/tam_logo"
+            android:layout_height="@dimen/tam_logo"
+            android:contentDescription="@string/cd_logo"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintBottom_toTopOf="@id/txt_titulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            style="@style/Pocket.Titulo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:gravity="center"
+            android:text="@string/apresentacao_titulo"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@id/txt_aluno"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_logo" />
+
+        <TextView
+            android:id="@+id/txt_aluno"
+            style="@style/Pocket.Corpo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:gravity="center"
+            android:text="@string/aluno_dados"
+            app:layout_constraintBottom_toTopOf="@id/divisor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_titulo" />
+
+        <View
+            android:id="@+id/divisor"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="24dp"
+            android:background="@color/azul_neon"
+            app:layout_constraintBottom_toTopOf="@id/txt_label_apelido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_aluno" />
+
+        <TextView
+            android:id="@+id/txt_label_apelido"
+            style="@style/Pocket.Corpo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/label_apelido"
+            app:layout_constraintBottom_toTopOf="@id/edit_apelido"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divisor" />
+
+        <EditText
+            android:id="@+id/edit_apelido"
+            style="@style/Pocket.Campo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:hint="@string/hint_apelido"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            app:layout_constraintBottom_toTopOf="@id/btn_entrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_label_apelido" />
+
+        <Button
+            android:id="@+id/btn_entrar"
+            style="@style/Pocket.Botao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:text="@string/btn_entrar"
+            app:layout_constraintBottom_toTopOf="@id/txt_ultimo_modulo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_apelido" />
+
+        <TextView
+            android:id="@+id/txt_ultimo_modulo"
+            style="@style/Pocket.Corpo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco"
+            android:gravity="center"
+            android:textColor="@color/azul_neon"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_entrar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

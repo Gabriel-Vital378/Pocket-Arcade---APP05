@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket Arcade</string>
+
+    <!-- ===== Comum ===== -->
+    <string name="boas_vindas_jogador">Boa sorte, %1$s!</string>
+    <string name="btn_abrir">▶ Abrir</string>
+    <string name="btn_voltar_menu">⬅ Menu</string>
+    <string name="btn_encerrar_sessao">🚪 Encerrar sessão</string>
+    <string name="btn_nova_partida">🔄 Nova partida</string>
+    <string name="modulo_scanner">Scanner de Mensagens</string>
+    <string name="modulo_arena">Arena (Pedra, Papel e Tesoura)</string>
+    <string name="modulo_cofre">Código Secreto</string>
+    <string name="modulo_randomizador">Randomizador de Palavras</string>
+
+    <!-- ===== Tela 1: Apresentação ===== -->
+    <!-- EDITE: nome completo, matrícula e curso. Em dupla, acrescente uma segunda linha com os dados do outro integrante. -->
+    <string name="aluno_dados">Gabriel Vital Al Jawabri\nMatrícula 2025.1.0120.0005-8\nIgor Cabral Muniz Do Patrocínio\nMatrícula 2025.1.0120.0040-6\nAnálise e Desenvolvimento de Sistemas · PUC Goiás</string>
+    <string name="apresentacao_titulo">🎮 Pocket Arcade</string>
+    <string name="apresentacao_subtitulo">Central de Desafios</string>
+    <string name="label_apelido">Seu apelido</string>
+    <string name="hint_apelido">Digite seu apelido</string>
+    <string name="btn_entrar">🚀 Entrar no Pocket Arcade</string>
+    <string name="erro_apelido_curto">O apelido precisa ter pelo menos %1$d caracteres.</string>
+    <string name="ultimo_modulo">Último módulo usado: %1$s</string>
+    <string name="sessao_encerrada">Sessão encerrada. Nenhum desafio foi aberto desta vez.</string>
+    <string name="cd_logo">Logotipo do Pocket Arcade</string>
+
+    <!-- ===== Tela 2: Central ===== -->
+    <string name="saudacao">👋 Olá, %1$s!</string>
+    <string name="central_subtitulo">Escolha um desafio, role a tela e divirta-se com os quatro módulos do Pocket Arcade.</string>
+    <string name="scanner_titulo">🔍 Scanner</string>
+    <string name="scanner_desc">Analise uma mensagem: conte caracteres, palavras e vogais, veja o texto invertido e descubra se ele é um palíndromo.</string>
+    <string name="arena_titulo">✂️ Arena</string>
+    <string name="arena_desc">Dispute uma partida de Pedra, Papel e Tesoura contra o dispositivo. Vence quem alcançar duas vitórias primeiro.</string>
+    <string name="cofre_titulo">🔐 Código Secreto</string>
+    <string name="cofre_desc">Descubra os quatro dígitos diferentes do cofre em até oito tentativas, guiado por pistas coloridas.</string>
+    <string name="randomizador_titulo">🎲 Randomizador</string>
+    <string name="randomizador_desc">Cadastre palavras por categoria e sorteie um item apenas da categoria escolhida.</string>
+    <string name="cd_icone_scanner">Ícone de mensagem com lupa</string>
+    <string name="cd_icone_arena">Ícone de tesoura</string>
+    <string name="cd_icone_cofre">Ícone de cadeado</string>
+    <string name="cd_icone_randomizador">Ícone de sorteio</string>
+
+    <!-- ===== Tela 3: Scanner ===== -->
+    <string name="scanner_tela_titulo">Scanner de Mensagens</string>
+    <string name="hint_mensagem">Digite uma mensagem</string>
+    <string name="btn_analisar">🔍 Analisar</string>
+    <string name="btn_limpar">🧹 Limpar</string>
+    <string name="erro_mensagem_vazia">Digite uma mensagem para analisar.</string>
+    <string name="erro_mensagem_curta">A mensagem precisa ter pelo menos %1$d caracteres.</string>
+    <string name="medida">Medida</string>
+    <string name="resultado">Resultado</string>
+    <string name="medida_caracteres">Caracteres sem espaços</string>
+    <string name="medida_palavras">Palavras</string>
+    <string name="medida_vogais">Vogais</string>
+    <string name="medida_invertido">Texto invertido</string>
+    <string name="medida_palindromo">Palíndromo</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+
+    <!-- ===== Tela 4: Arena ===== -->
+    <string name="arena_tela_titulo">Arena</string>
+    <string name="arena_escolha">Escolha sua jogada</string>
+    <string name="arena_regra">Empates não somam pontos. Vence quem alcançar duas vitórias primeiro.</string>
+    <string name="jogada_pedra">Pedra</string>
+    <string name="jogada_papel">Papel</string>
+    <string name="jogada_tesoura">Tesoura</string>
+    <string name="label_voce">Você</string>
+    <string name="label_dispositivo">Dispositivo</string>
+    <string name="arena_placar">Você %1$d × %2$d Dispositivo</string>
+    <string name="arena_aguardando">Faça sua jogada!</string>
+    <string name="arena_empate">🤝 Empate! Ninguém pontua.</string>
+    <string name="arena_vitoria_rodada">🎉 Você venceu a rodada!</string>
+    <string name="arena_derrota_rodada">😈 O dispositivo venceu a rodada.</string>
+    <string name="arena_vitoria_final">🏆 Vitória! Você venceu a partida. Placar final: %1$d × %2$d</string>
+    <string name="arena_derrota_final">💀 Derrota! O dispositivo venceu a partida. Placar final: %1$d × %2$d</string>
+    <string name="cd_aguardando_jogada">Aguardando jogada</string>
+
+    <!-- ===== Tela 5: Código Secreto ===== -->
+    <string name="cofre_tela_titulo">Código Secreto</string>
+    <string name="cofre_instrucao">Descubra os quatro dígitos diferentes do cofre. Você tem no máximo oito tentativas.</string>
+    <string name="hint_palpite">Digite quatro números diferentes</string>
+    <string name="btn_tentar">🔓 Tentar</string>
+    <string name="legenda_verde">Verde: dígito certo na posição certa.</string>
+    <string name="legenda_amarelo">Amarelo: dígito existe, mas está na posição errada.</string>
+    <string name="legenda_cinza">Cinza: dígito que não existe no código.</string>
+    <string name="tentativas_contador">Tentativas: %1$d/%2$d</string>
+    <string name="erro_codigo_vazio">Digite os quatro números antes de tentar.</string>
+    <string name="erro_codigo_formato">Informe exatamente quatro números (de 0 a 9).</string>
+    <string name="erro_codigo_repetido">Não repita dígitos: os quatro números devem ser diferentes.</string>
+    <string name="historico_titulo">Histórico das tentativas</string>
+    <string name="historico_prefixo">%1$d.</string>
+    <string name="historico_resumo">→ %1$d na posição certa, %2$d na posição errada</string>
+    <string name="codigo_vitoria">🎉 Cofre aberto! Você venceu.</string>
+    <string name="codigo_derrota">💥 Fim das tentativas. Você perdeu.</string>
+    <string name="codigo_detalhes">Tentativas: %1$d · Tempo: %2$s</string>
+    <string name="codigo_revelado">O código era %1$s.</string>
+    <string name="tempo_formato">%1$02d:%2$02d</string>
+
+    <!-- ===== Tela 6: Randomizador ===== -->
+    <string name="randomizador_tela_titulo">Randomizador</string>
+    <string name="hint_valor">Digite uma palavra</string>
+    <string name="btn_adicionar">➕ Adicionar</string>
+    <string name="btn_sortear">🎲 Sortear</string>
+    <string name="btn_ver_grade">🔲 Grade</string>
+    <string name="btn_ver_lista">📋 Lista</string>
+    <string name="erro_valor_vazio">Digite um valor para cadastrar.</string>
+    <string name="erro_item_duplicado">Esse item já existe na categoria %1$s.</string>
+    <string name="erro_categoria_vazia">Não há itens cadastrados em %1$s para sortear.</string>
+    <string name="sorteio_inicial">Escolha uma categoria e toque em Sortear. Toque e segure um item para excluí-lo.</string>
+    <string name="sorteado">🎯 Sorteado: %1$s (%2$s)</string>
+    <string name="item_removido">Item removido: %1$s</string>
+    <string name="seed_filme_1">Interestelar</string>
+    <string name="seed_filme_2">Matrix</string>
+    <string name="seed_comida_1">Pizza</string>
+    <string name="seed_comida_2">Pamonha</string>
+    <string name="seed_lugar_1">Parque Flamboyant</string>
+    <string name="seed_lugar_2">Lago das Rosas</string>
+    <string name="seed_desafio_1">Dez flexões</string>
+    <string name="seed_desafio_2">Cantar um refrão</string>
+    <string-array name="categorias">
+        <item>Filmes</item>
+        <item>Comidas</item>
+        <item>Lugares</item>
+        <item>Desafios</item>
+    </string-array>
+</resources>

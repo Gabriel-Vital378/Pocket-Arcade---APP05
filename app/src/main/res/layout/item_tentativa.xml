@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_tentativa"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/espaco_pequeno"
+    android:background="@drawable/bg_item"
+    android:fontFamily="monospace"
+    android:padding="@dimen/espaco"
+    android:textColor="@color/texto"
+    android:textSize="17sp" />
